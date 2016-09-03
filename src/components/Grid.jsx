@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react'
 
 const Grid = ({cells}) => (
-  <div className='grid'>
+  <div>
     GRID
   </div>
 )
