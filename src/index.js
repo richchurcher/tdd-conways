@@ -4,15 +4,15 @@ import {Provider} from 'react-redux'
 import {createStore} from 'redux'
 
 import reducers from './reducers'
-import App from './components/App'
+import GridContainer from './components/GridContainer'
 
 let store = createStore(reducers, window.devToolsExtension && window.devToolsExtension())
 
 document.addEventListener('DOMContentLoaded', () => {
   render(
     <Provider store={store}>
-      <App />
+      <GridContainer />
     </Provider>,
-    document.getElementById('app')
+    document.getElementById('grid')
   )
 })
